@@ -26,7 +26,13 @@ def manifest_check():
         if p.is_absolute() or '..' in p.parts or rel in expected: fail(f'unsafe/duplicate path {rel!r}')
         if len(digest)!=64 or any(c not in '0123456789abcdef' for c in digest): fail(f'bad digest line {i}')
         expected[rel]=digest
-    actual={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and p.name!='MANIFEST.sha256'}
+    actual={
+        p.relative_to(ROOT).as_posix()
+        for p in ROOT.rglob('*')
+        if p.is_file()
+        and p.name!='MANIFEST.sha256'
+        and '.git' not in p.relative_to(ROOT).parts
+    }
     if set(expected)!=actual: fail(f'manifest set mismatch missing={sorted(set(expected)-actual)[:5]} extra={sorted(actual-set(expected))[:5]}')
     for rel,d in expected.items():
         if sha(ROOT/rel)!=d: fail(f'hash mismatch {rel}')
