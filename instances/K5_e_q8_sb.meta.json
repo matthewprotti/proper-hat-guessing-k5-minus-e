@@ -1,0 +1,19 @@
+{
+  "clause_counts": {
+    "coloring_covered": 8400,
+    "global_color_symmetry_break": 1,
+    "view_at_least_one": 6720,
+    "view_at_most_one": 47040
+  },
+  "clauses": 62161,
+  "cnf_sha256": "9c96978fa085c37d5079a4910ac547430cfd18e65d0baf794587b0defd0a9ef8",
+  "format": "proper-hat-instance-metadata-v1",
+  "graph": "K5-e",
+  "legal_one_hot_variables": 28560,
+  "local_views": 6720,
+  "map_sha256": "f36f4b8ed9aa7ba9e2aedaf35e8a1edca7b4d49c13146ff8744c9548e7870685",
+  "proper_colorings": 8400,
+  "q": 8,
+  "symmetry_break": true,
+  "symmetry_break_literal": 1
+}

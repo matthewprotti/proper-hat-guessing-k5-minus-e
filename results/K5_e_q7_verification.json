@@ -1,0 +1,23 @@
+{
+  "attainable_local_views": 3570,
+  "correct_guess_histogram": {
+    "1": 2236,
+    "2": 829,
+    "3": 246,
+    "4": 47,
+    "5": 2
+  },
+  "extra": [],
+  "first_uncovered_colorings": [],
+  "format": "proper-hat-verification-v1",
+  "graph": "K5-e",
+  "illegal": [],
+  "malformed": [],
+  "missing": [],
+  "proper_colorings_checked": 3360,
+  "q": 7,
+  "strategy_entries": 3570,
+  "strategy_file": "K5_e_q7_strategy.json",
+  "strategy_sha256": "2dd6ac5319891f2dc326096aefb3699f2276e969d59c2e98a6a25917f0c5d8a9",
+  "winning": true
+}

@@ -1,0 +1,13 @@
+{
+  "format": "K5-e-q8-Fano-delta-v1",
+  "color_model": "F_2^3 encoded by integers 0..7; addition is bitwise XOR; U_n={x:n dot x=0}",
+  "delta_by_normal": [
+    {"normal": 1, "delta": 5},
+    {"normal": 2, "delta": 7},
+    {"normal": 3, "delta": 6},
+    {"normal": 4, "delta": 4},
+    {"normal": 5, "delta": 3},
+    {"normal": 6, "delta": 2},
+    {"normal": 7, "delta": 1}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "clauses": 62161,
+  "cnf_satisfied": true,
+  "cnf_sha256": "9c96978fa085c37d5079a4910ac547430cfd18e65d0baf794587b0defd0a9ef8",
+  "extra_views": [],
+  "first_unsatisfied_clauses": [],
+  "format": "proper-hat-cnf-assignment-verification-v1",
+  "graph": "K5-e",
+  "illegal_choices": [],
+  "map_sha256": "f36f4b8ed9aa7ba9e2aedaf35e8a1edca7b4d49c13146ff8744c9548e7870685",
+  "missing_views": [],
+  "q": 8,
+  "strategy_sha256": "2efd19a6290900b8fbec03d4e0530f83dcc5a0f3271dcec98557a9ae2a31be8f",
+  "true_variables": 6720,
+  "variables": 28560
+}

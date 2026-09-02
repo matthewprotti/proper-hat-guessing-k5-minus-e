@@ -1,0 +1,19 @@
+{
+  "all_clique_views": 6048,
+  "certificate_sha256": "fb72437c10c2d6f04e174f24aa4bc12372d6adff41ac0edacea8638067c68e0e",
+  "correct_guess_histogram": {
+    "1": 7479,
+    "2": 840,
+    "3": 75,
+    "4": 6
+  },
+  "errors": [],
+  "format": "K5-e-q8-residual-matching-verification-v1",
+  "matched_clique_views": 5376,
+  "proper_colorings_checked": 8400,
+  "reconstructed_strategy_entries": 6720,
+  "residual_colorings": 5376,
+  "twin_covered": 3024,
+  "twin_entries": 672,
+  "verified": true
+}

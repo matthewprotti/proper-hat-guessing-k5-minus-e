@@ -1,0 +1,14 @@
+{
+  "claim": "HGP(K5-e)>=8",
+  "correct_guess_histogram": {
+    "1": 7479,
+    "2": 840,
+    "3": 75,
+    "4": 6
+  },
+  "proper_colorings_checked": 8400,
+  "q": 8,
+  "strategy_entries": 6720,
+  "strategy_sha256": "2efd19a6290900b8fbec03d4e0530f83dcc5a0f3271dcec98557a9ae2a31be8f",
+  "verified": true
+}

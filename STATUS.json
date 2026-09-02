@@ -1,0 +1,21 @@
+{
+  "claim": "HG_P(K5-e)=8",
+  "date": "2026-09-02",
+  "first_public_commit": "cc9f874ce1f5fa91db42c84bf3e38e8170309a8d",
+  "format": "hgp-k5e-public-disclosure-v1",
+  "mathematical_status": "PROVED_IN_RELEASE",
+  "maximum_residual_right_degree": 3,
+  "proper_colorings_checked": 8400,
+  "publication_status": "PUBLIC_GITHUB_RESEARCH_DISCLOSURE",
+  "residual_colorings": 5376,
+  "review_status": "INDEPENDENT_REVIEW_PENDING",
+  "scope": {
+    "C5_solved": false,
+    "exhaustive_novelty_clearance": false,
+    "general_Kn_minus_e_solved": false,
+    "peer_reviewed": false
+  },
+  "source_sprint_sha256": "290487eefe107797eb4a077269c5756ab906e1f25abab79235a7ba01aab6ec49",
+  "twin_covered_colorings": 3024,
+  "version": "0.1"
+}
