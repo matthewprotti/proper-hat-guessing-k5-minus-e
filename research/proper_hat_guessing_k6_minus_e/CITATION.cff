@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite the exact public commit for this research disclosure."
+title: "The proper hat-guessing number of K6-e"
+type: article
+authors:
+  - family-names: "Protti"
+    given-names: "Matthew"
+version: "0.1"
+date-released: 2026-09-03
+repository-code: "https://github.com/matthewprotti/proper-hat-guessing-k5-minus-e"
+abstract: >-
+  We prove that the proper hat-guessing number of the complete graph on six
+  vertices with one edge removed is ten. The lower bound uses an explicit
+  deletion-and-repair construction from a sharply four-transitive eleven-point
+  permutation group and a Hall-completion criterion. We also classify all
+  repairable orbit labels and prove an even-n obstruction for set-symmetric
+  line-permutation twin rules.
+keywords:
+  - hat guessing
+  - proper coloring
+  - graph theory
+  - Hall's theorem
+  - Mathieu group
+  - combinatorial design
+  - AI-assisted mathematics
