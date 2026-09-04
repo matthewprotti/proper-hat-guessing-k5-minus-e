@@ -1,0 +1,26 @@
+{
+  "all_rejected": true,
+  "negative_controls": [
+    {
+      "mutation": "illegal_omitted_pair",
+      "reason": "illegal or noncanonical omitted pair",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "truncated_matching",
+      "reason": "truncated matching",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "duplicate_right_via_legal_position",
+      "reason": "repeated right endpoint",
+      "status": "REJECTED"
+    },
+    {
+      "mutation": "changed_mutable_tail_set",
+      "reason": "repeated right endpoint",
+      "status": "REJECTED"
+    }
+  ],
+  "positive_control": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "family": {
+    "all_right_views": 53460,
+    "baseline_correct_guess_histogram": {
+      "1": 57802,
+      "2": 5176,
+      "3": 382
+    },
+    "capacity_bound": 380,
+    "check": "STDLIB_MATRIX_NORMALIZED_SHARED_CLIQUE_FAMILY",
+    "coverage_failures": 0,
+    "distinct_envelope_matching": 47510,
+    "equal_matching": 5940,
+    "family_size_exact": "2462625387274654950767440006258975862817483704404090416746768337765357610718575663213391640930307227550414249394176",
+    "full_colourings_per_strategy_by_free_orbit_lift": 138378240,
+    "full_sweep_executed": false,
+    "mutable_tail_orbits": 380,
+    "normalized_colourings_per_strategy": 63360,
+    "normalizers": 2184,
+    "orientation_local_contexts_checked": 87680,
+    "unused_matching_right_views": 10,
+    "verified": true
+  },
+  "pilot": {
+    "check": "STDLIB_ALL_FROZEN_PILOT_MATCHINGS",
+    "distinct_sector_certificates": 136,
+    "flows": 8,
+    "matching_size_each": 42570,
+    "verified": true
+  }
+}
