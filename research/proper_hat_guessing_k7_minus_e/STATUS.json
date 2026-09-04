@@ -1,0 +1,24 @@
+{
+  "claim": "HG_P(K7-e)=12",
+  "date": "2026-09-04",
+  "format": "K7-e-accepted-public-status-v1",
+  "independent_review_sha256": "01678f793e0c7ded41e3b2a2fe5883bea09ab3df8091ff355e53a8779235e42f",
+  "mathematical_status": "PROVED",
+  "nonclaims": [
+    "general K_n-e problem",
+    "design existence for every prime n",
+    "necessity of either sufficient framework",
+    "K8-e",
+    "conventional peer review",
+    "exhaustive novelty clearance"
+  ],
+  "peer_reviewed": false,
+  "proof_routes": [
+    "two explicit block-disjoint S(5,6,12) completion designs",
+    "sharply-five-transitive twelve-point orbit construction"
+  ],
+  "publication_status": "PUBLIC_RESEARCH_DISCLOSURE",
+  "review_disposition": "ACCEPT_K7E_THEOREM",
+  "review_status": "INDEPENDENT_ADVERSARIAL_REVIEW_ACCEPTED",
+  "source_review_package_sha256": "1490ab4349e1b909c3c3e741032d4354a29434fef27be4ff169f4f66b042d149"
+}
