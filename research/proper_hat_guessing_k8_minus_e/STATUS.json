@@ -1,0 +1,29 @@
+{
+  "claim": "HG_P(K8-e)=14",
+  "date": "2026-09-04",
+  "format": "K8-e-public-disclosure-status-v1",
+  "headline_mathematical_status": "PROVED_COMPUTER_ASSISTED",
+  "headline_project_review_status": "ACCEPTED",
+  "peer_reviewed": false,
+  "named_independent_domain_expert_review": false,
+  "vibemathed_verification_label": "UNREVIEWED",
+  "publication_status": "PUBLIC_RESEARCH_DISCLOSURE",
+  "construction": "PGL(2,13)-equivariant twin formula plus certified residual-orbit matching",
+  "full_proper_colourings_checked": 138378240,
+  "coverage_failures": 0,
+  "shared_completion_companion": {
+    "claim": "one common clique completion for 2^380 equivariant twin-rule pairs",
+    "mathematical_status": "COMPLETE_COMPUTER_ASSISTED_CANDIDATE",
+    "independent_review": "PENDING",
+    "scope": "capacity-optimal only in the independent whole-tail reversal model with a common clique completion"
+  },
+  "nonclaims": [
+    "general K_n-e formula",
+    "K9-e",
+    "general envelope-matching theorem",
+    "peer review",
+    "Lean verification",
+    "named independent domain-expert verification",
+    "exhaustive novelty clearance"
+  ]
+}
