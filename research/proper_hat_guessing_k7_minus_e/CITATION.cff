@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the exact public commit or archival release of this disclosure."
+title: "The proper hat-guessing number of K7-e"
+type: article
+authors:
+  - family-names: "Protti"
+    given-names: "Matthew"
+version: "0.1"
+date-released: 2026-09-04
+repository-code: "https://github.com/matthewprotti/proper-hat-guessing-k5-minus-e/tree/k7e-v0.1-reviewed/research/proper_hat_guessing_k7_minus_e"
+abstract: >-
+  We prove that the proper hat-guessing number of the complete graph on seven
+  vertices with one edge removed is twelve. Two explicit lower-bound proofs
+  use disjoint Witt designs and a sharply five-transitive twelve-point orbit
+  construction, completed by a common Hall criterion.
+keywords:
+  - hat guessing
+  - proper coloring
+  - graph theory
+  - Hall's theorem
+  - Steiner systems
+  - permutation groups
+  - AI-assisted mathematics

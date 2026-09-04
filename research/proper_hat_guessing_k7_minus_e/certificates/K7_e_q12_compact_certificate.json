@@ -1,0 +1,40 @@
+{
+  "artifact_sha256": {
+    "W12_design_A_blocks.tsv": "e8e5a84cf0d65be323c3187cdefbc3cab66ff954f4442754056331832dce5d34",
+    "W12_design_A_completion.tsv": "bb79d204f7623fa6f1bf0c22bc095b9cc8e9a95b35c3677928eb2361d7af207d",
+    "W12_design_B_blocks.tsv": "390d3daf7a45bf97ede2f548b789ce9b2d2dee6ef817bf03dc68f51d289ad07e",
+    "W12_design_B_completion.tsv": "bff58046a988a9fe922ce3d50ebb05c121042498f13d9b645975e15a51a43b14",
+    "orbit_alpha_label6.tsv": "9f7f3402f7298ca67dde1d774a21520e6f893740b5e490ce8438ba50077c7fa8",
+    "orbit_beta_label5.tsv": "ab57a45aa67db6924f08b2cefe5fb8cafd328c77c9eda9279dfa978cca851a10"
+  },
+  "base_tuple": [0, 1, 2, 3, 4],
+  "colour_set": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  "design_A_seed": [0, 1, 2, 3, 4, 6],
+  "design_B_copy_cycle": [0, 1, 2, 4, 5, 3],
+  "expected": {
+    "compatible_pairs": [[5, 6], [6, 7], [6, 8], [6, 9], [6, 10], [6, 11]],
+    "design_blocks_each": 132,
+    "design_intersection": 0,
+    "group_order": 95040,
+    "maximum_right_degree": 5,
+    "ordered_five_images": 95040,
+    "ordered_lines": 59400,
+    "ordered_local_contexts": 3801600,
+    "pentads_each": 792,
+    "proper_colourings": 4656960,
+    "residual": 3421440,
+    "set_lines": 495,
+    "set_local_contexts": 31680,
+    "twin_covered": 1235520
+  },
+  "format": "K7-e-W12-orbit-compact-certificate-v2",
+  "generators": {
+    "a": [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]],
+    "b": [[2, 6, 10, 7], [3, 9, 4, 5]],
+    "c": [[0, 11], [1, 10], [2, 5], [3, 7], [4, 8], [6, 9]]
+  },
+  "main_orbit_pair": {"alpha": 6, "beta": 5},
+  "orbit_labels": [5, 6, 7, 8, 9, 10, 11],
+  "review_disposition": "ACCEPT_K7E_THEOREM",
+  "target": "HG_P(K7-e)=12"
+}
