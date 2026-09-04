@@ -1,0 +1,216 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,enumitem,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newcommand{\HGP}{\mathrm{HG}_{P}}
+\title{The Proper Hat-Guessing Number of $K_7-e$}
+\author{Matthew Protti\\\small Independent Researcher}
+\date{4 September 2026\\\small Public research disclosure v0.1; independent adversarial review accepted}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that the proper hat-guessing number of the complete graph on seven
+vertices with one edge removed is twelve. Two distinct explicit constructions
+prove the lower bound. The first uses two block-disjoint copies of the Witt
+design $S(5,6,12)$; the second uses orbit maps from a directly regenerated
+sharply five-transitive twelve-point permutation group and is genuinely
+order-sensitive. Both constructions satisfy a common coordinate-line
+criterion that reduces the residual game to Hall's theorem. We also record a
+general disjoint completion-design theorem, an even-$n$ obstruction to
+set-symmetric line-permutation twin rules inside this sufficient framework,
+and a prime-admissibility theorem for the design parameters. Dependency-free
+Python and independent C++ code regenerate the finite core.
+\end{abstract}
+
+\section{Introduction}
+In the proper hat-guessing game on a graph $G$, an adversary assigns colours
+properly from a palette of size $q$. Each vertex sees the colours of its
+neighbours and guesses its own colour; the players win if at least one guess is
+correct. Adriaensen et al. introduced the parameter $\HGP(G)$ and proved
+\[
+  \HGP(G)\le |V(G)|+\chi(G)-1.
+\]
+For $K_n-e$, their results leave only the two values $2n-3$ and $2n-2$.
+We settle the case $n=7$.
+
+\begin{theorem}\label{thm:main}
+\[
+\HGP(K_7-e)=12.
+\]
+\end{theorem}
+
+The graph has seven vertices and chromatic number six, so the displayed upper
+bound gives $\HGP(K_7-e)\le12$. We give two twelve-colour strategies.
+
+\section{Twin completion and coordinate lines}
+Let the missing edge join nonadjacent twins $a,b$, and let the other
+$k=n-2$ vertices form an ordered clique. Put $q=2n-2$. Suppose the twins use
+legal functions $\alpha,\beta$ of the injective clique-colour tuple.
+
+Fix a clique vertex and freeze the other $k-1$ clique colours. If $D$ is the
+remaining colour set, then $|D|=n+1$. Restricting the twin rules to this
+coordinate line gives maps $f,g:D\to D$.
+
+\begin{lemma}[Coordinate-line criterion]\label{lem:line}
+Assume on every coordinate line that $f$ and $g$ are derangement
+permutations, $f(r)\ne g(r)$ for every $r$, and $g\circ f$ has no fixed
+point. Then the twin rules extend to a winning $q$-colour strategy on
+$K_n-e$.
+\end{lemma}
+
+\begin{proof}
+For distinct twin colours $x\ne y$, failure to cover every legal unseen clique
+colour would force $f(y)=x$ and $g(x)=y$, making $y$ fixed by $g\circ f$.
+For equal twin colour $x$, the two legal candidates $f^{-1}(x)$ and
+$g^{-1}(x)$ are distinct. Hence, after removing colourings already covered by
+the twins, every labelled clique view lies in at most $k$ residual colourings.
+The residual incidence graph has left degree $k$ and right degree at most $k$;
+therefore Hall's condition holds by edge counting. A matching assigns
+consistent clique guesses to all residual colourings.
+\end{proof}
+
+No explicit giant matching is needed: the degree inequality proves existence.
+
+\section{Two disjoint completion designs}
+\begin{proposition}[Disjoint completion designs]\label{prop:design}
+If two block-disjoint Steiner systems
+\[
+ S(n-2,n-1,2n-2)
+\]
+exist on the same colour set, then $\HGP(K_n-e)=2n-2$.
+\end{proposition}
+\begin{proof}
+For each $(n-2)$-set $B$, let $f_i(B)$ be the unique point completing $B$ to
+a block of the $i$th design. On a coordinate line each completion map is a
+fixed-point-free involution. Block-disjointness makes the two maps pointwise
+unequal. For involutions, $g(f(r))=r$ if and only if $f(r)=g(r)$, so the
+composition is fixed-point-free. Apply Lemma~\ref{lem:line} and the general
+upper bound.
+\end{proof}
+
+Our certificate contains two explicit 132-block systems $\mathcal W_A$ and
+$\mathcal W_B$. Direct verification shows that every one of the
+$\binom{12}{5}=792$ pentads is completed exactly once in each system and that
+the systems share no block. Proposition~\ref{prop:design} proves the lower
+bound in Theorem~\ref{thm:main}.
+
+For direct confirmation, on all 495 frozen four-set lines both maps have cycle
+type $(2,2,2,2)$, are pointwise unequal, and have fixed-point-free
+composition. The composition has type $(4,4)$ on 330 lines and
+$(2,2,2,2)$ on 165 lines.
+
+\section{A distinct sharply transitive orbit construction}
+On $\Omega=\{0,\ldots,11\}$ consider
+\[
+\begin{aligned}
+ a&=(0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9\ 10),\\
+ b&=(2\ 6\ 10\ 7)(3\ 9\ 4\ 5),\\
+ c&=(0\ 11)(1\ 10)(2\ 5)(3\ 7)(4\ 8)(6\ 9).
+\end{aligned}
+\]
+A breadth-first closure gives 95,040 permutations, and the images of
+$(0,1,2,3,4)$ are all 95,040 ordered injective five-tuples. Thus sharp
+five-transitivity is proved as a finite fact, without using a group
+classification premise.
+
+For $y\in\{5,\ldots,11\}$ define
+\[
+ F_y(g(0),\ldots,g(4))=g(y).
+\]
+The complete line classification is:
+\begin{itemize}[nosep]
+\item $F_6$ has type $(2,2,2,2)$ on every one of 59,400 ordered lines;
+\item each of $F_5,F_7,F_8,F_9,F_{10},F_{11}$ has type $(4,4)$ on every line;
+\item exactly the six pairs $\{F_6,F_y\}$ with $y\ne6$ have pointwise
+unequal outputs and fixed-point-free composition on every line.
+\end{itemize}
+Choose $\alpha=F_6$ and $\beta=F_5$. Lemma~\ref{lem:line} again proves the
+lower bound.
+
+This proof is not merely the first proof in different notation. The map
+$F_6$ is exactly the completion map of $\mathcal W_A$, but $F_5$ is
+order-sensitive: on the 120 orderings of each pentad, it assumes six distinct
+outputs.
+
+\section{General structural consequences}
+\begin{proposition}[Even-$n$ obstruction]\label{prop:even}
+For even $n$, no set-symmetric twin rule can be a permutation on every
+coordinate line within the sufficient framework of Lemma~\ref{lem:line}.
+\end{proposition}
+\begin{proof}
+For a fixed output colour $y$, the preimages form a Steiner system
+$S(n-3,n-2,2n-3)$. The number of blocks through a fixed $(n-4)$-set would be
+$(n+1)/2$, which is not integral when $n$ is even.
+\end{proof}
+The statement is deliberately scoped: it does not characterize every possible
+winning strategy.
+
+\begin{proposition}[Prime admissibility]\label{prop:prime}
+The standard divisibility conditions for $S(n-2,n-1,2n-2)$ hold if and only
+if $n$ is prime. When such a design exists, its block count is the Catalan
+number $C_{n-1}$.
+\end{proposition}
+\begin{proof}
+Writing $j=t-s$, the required numbers are
+\[
+ \lambda_s=\frac{\binom{n+j}{j}}{j+1}
+          =\frac1n\binom{n+j}{j+1}.
+\]
+For prime $n$, Lucas's theorem gives the required divisibility for
+$1\le j\le n-2$. If $n$ is composite and $p$ is its least prime factor, take
+$j=p-1$; then $\binom{n+p-1}{p-1}\equiv1\pmod p$, so the corresponding
+$\lambda_s$ is not integral. The block count identity is
+$\frac1n\binom{2n-2}{n-1}=C_{n-1}$.
+\end{proof}
+This is an admissibility result, not an existence theorem for larger primes.
+
+\section{Finite census and verification}
+For either compatible construction,
+\[
+(12)_5=95,040
+\]
+ordered clique colourings occur. The twins each have seven legal colours and,
+because their guesses differ, cover $7+7-1=13$ of the 49 twin-colour pairs,
+leaving 36. Hence
+\[
+\begin{array}{rcl}
+\text{proper colourings}&=&4,656,960,\\
+\text{twin-covered}&=&1,235,520,\\
+\text{residual colourings}&=&3,421,440,\\
+\text{residual incidence edges}&=&17,107,200.
+\end{array}
+\]
+The maximum residual right degree is five.
+
+The release contains a standard-library Python constructor, an independently
+written C++20 constructor, a data-only verifier of the frozen tables, and
+rejecting negative controls. An independent adversarial review rebuilt both
+finite constructions rather than trusting the stored result summaries and
+returned \texttt{ACCEPT\_K7E\_THEOREM}.
+
+\section*{Scope and AI-use disclosure}
+The result does not solve the general $K_n-e$ problem or $K_8-e$, and it does
+not assert the existence of the completion designs for every prime $n$.
+Conventional peer review is not claimed.
+
+OpenAI GPT-5.6 Pro was used substantively in literature search, target
+selection, construction search, proof development, code generation,
+verification, adversarial critique, and manuscript preparation. Matthew
+Protti selected and framed the target, directed and evaluated the work,
+commissioned independent review, set the scope, approved disclosure, and
+accepts responsibility.
+
+\begin{thebibliography}{9}
+\bibitem{properhat}
+S. Adriaensen et al., \emph{Hat guessing with proper colorings},
+arXiv:2603.04909v4, 2026.
+\bibitem{kramermesner}
+E. S. Kramer and D. M. Mesner, \emph{Intersections among Steiner systems},
+J. Combin. Theory Ser. A 16 (1974), 273--285.
+\end{thebibliography}
+\end{document}
