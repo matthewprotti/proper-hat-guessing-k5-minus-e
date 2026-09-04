@@ -1,0 +1,54 @@
+[
+  {
+    "id": "R0",
+    "claim": "Gate23 review integrated separately",
+    "evidence": "incoming review and repaired v2; does not accept new results"
+  },
+  {
+    "id": "F0",
+    "claim": "full diagonal quota-flow feasibility for every n>=3",
+    "evidence": "symbolic integral-flow argument",
+    "status": "DERIVED_UNREVIEWED"
+  },
+  {
+    "id": "F1",
+    "claim": "pair reversal and residual-cycle operations preserve diagonal certificate",
+    "evidence": "symbolic proof",
+    "status": "DERIVED_UNREVIEWED"
+  },
+  {
+    "id": "E0",
+    "claim": "orientation-envelope count and common-completion equivalence",
+    "evidence": "symbolic proof",
+    "status": "DERIVED_UNREVIEWED"
+  },
+  {
+    "id": "E1",
+    "claim": "capacity bound on mutable whole orbit fibres",
+    "evidence": "counting plus orbit lift",
+    "status": "DERIVED_UNREVIEWED"
+  },
+  {
+    "id": "K0",
+    "claim": "one common clique policy for 2^380 exact K8 twin pairs",
+    "evidence": "FAMILY data; separate stdlib checker",
+    "status": "INTERNALLY_CERTIFICATE_CHECKED"
+  },
+  {
+    "id": "K1",
+    "claim": "380 is optimal in the defined common-clique whole-orbit model",
+    "evidence": "K0 plus 47523>47520 at 381",
+    "status": "DERIVED_UNREVIEWED"
+  },
+  {
+    "id": "P0",
+    "claim": "8 diagonal-safe selections and 136 successful orientations",
+    "evidence": "all frozen matching streams checked",
+    "status": "INTERNALLY_CERTIFICATE_CHECKED"
+  },
+  {
+    "id": "N0",
+    "claim": "no universal compatibility, general-n solution, blind review, full sweep, or publication",
+    "status": "EXPLICIT_NONCLAIMS"
+  }
+]

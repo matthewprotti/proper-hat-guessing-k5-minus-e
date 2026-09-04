@@ -1,0 +1,18 @@
+{
+  "accepted_K8_parent": {
+    "file": "HGP_K8E_PGL_MATCHING_CLOSURE_20260904_v1.zip",
+    "sha256": "179c7927cc415e7e3def84f627c0690c3f7b5ab8aeac70d940cd1e6e875825b6",
+    "used_for_new_certificates": false
+  },
+  "inherited_pair_table_sha256": "23c647360510a9569fab0436b45705a63ec9bdd08b596e08fb4374f3b280042b",
+  "prior_addendum": {
+    "file": "HGP_K8E_REVIEW_ADDENDUM_CUBE_OBSTRUCTION_20260904_v1.zip",
+    "sha256": "4e84fb0483605748c8faa507e3828e99e40fc66ef4275d263b6d9a84d9a5dfad"
+  },
+  "publication_actions": "NONE",
+  "review_archive": {
+    "file": "K8E_GATE23_ADVERSARIAL_REVIEW.zip",
+    "scope": "original Gate23 v1 only",
+    "sha256": "6da9d6f635fb170a8d51f3895aa4a17d54de73b6b3362687cd5bfd1fcbdb8b10"
+  }
+}

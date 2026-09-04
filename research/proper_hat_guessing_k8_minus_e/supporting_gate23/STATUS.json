@@ -1,0 +1,8 @@
+{
+  "stage": "GATE23_REPAIRED_RESEAL",
+  "mathematical_review": "ACCEPT_WITH_EXPLICIT_REPAIRS",
+  "required_repairs": "APPLIED",
+  "independent_review_of_this_reseal": "NOT_CLAIMED",
+  "accepted_K8_theorem": "UNCHANGED",
+  "new_quota_or_envelope_results_accepted_here": false
+}

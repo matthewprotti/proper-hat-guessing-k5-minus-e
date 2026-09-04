@@ -1,0 +1,19 @@
+{
+  "seeds": 2000,
+  "perfect": 1843,
+  "deficient": 157,
+  "deficiency_histogram": {
+    "1": 153,
+    "2": 4
+  },
+  "off_diagonal_deficiencies": 0,
+  "mismatches": 0,
+  "two_missing_view_seeds": [
+    741,
+    1440,
+    1502,
+    1746
+  ],
+  "all_matching_edges_explicitly_checked": true,
+  "elapsed_seconds": 23.788028973999985
+}

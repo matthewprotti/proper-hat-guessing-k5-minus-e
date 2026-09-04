@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this public research disclosure, please cite it using the metadata below."
+title: "The proper hat-guessing number of K8-e"
+type: software
+version: "0.1"
+date-released: 2026-09-04
+authors:
+  - family-names: Protti
+    given-names: Matthew
+    affiliation: Independent Researcher
+repository-code: "https://github.com/matthewprotti/proper-hat-guessing-k5-minus-e"
+abstract: >-
+  A computer-assisted proof that the proper hat-guessing number of the
+  complete graph on eight vertices with one edge removed is fourteen,
+  together with a separately status-labelled shared-completion companion.

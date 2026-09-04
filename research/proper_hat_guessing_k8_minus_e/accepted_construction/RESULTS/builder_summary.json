@@ -1,0 +1,22 @@
+{
+  "format": "K8-e-q14-PGL-equivariant-strategy-v1",
+  "claim_candidate": "HG_P(K8-e)=14",
+  "generator": "alpha_index=(a+b+c) mod 8; beta_index=(a+2b+3c+1) mod 8, incremented mod 8 when equal",
+  "normalized_clique_orbits": 990,
+  "normalized_proper_colouring_orbits": 63360,
+  "twin_covered_orbits": 14850,
+  "residual_orbits": 48510,
+  "attainable_clique_view_orbits": 53460,
+  "matching_size": 48510,
+  "matched_clique_view_orbits": 48510,
+  "coverage_failures": 0,
+  "correct_guess_histogram": {
+    "1": 57738,
+    "2": 5309,
+    "3": 308,
+    "4": 5
+  },
+  "full_PGL_group_order": 2184,
+  "full_proper_colourings_represented": 138378240,
+  "verified": true
+}

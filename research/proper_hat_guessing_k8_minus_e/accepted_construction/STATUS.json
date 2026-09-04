@@ -1,0 +1,19 @@
+{
+  "format": "HGP-K8E-status-v1",
+  "date": "2026-09-04",
+  "claim": "HG_P(K8-e)=14",
+  "mathematical_status": "COMPLETE_COMPUTER_ASSISTED_PROOF_CANDIDATE",
+  "review_status": "INDEPENDENT_ADVERSARIAL_REVIEW_PENDING",
+  "publication_status": "PRIVATE_NOT_PUBLICLY_TIMESTAMPED",
+  "construction": "PGL(2,13)-equivariant twin formula plus residual-orbit matching",
+  "normalized_proper_colouring_orbits": 63360,
+  "full_proper_colourings": 138378240,
+  "coverage_failures": 0,
+  "scope": {
+    "general_Kn_minus_e_solved": false,
+    "K8_minus_e_claimed": true,
+    "peer_reviewed": false,
+    "lean_verified": false,
+    "exhaustive_novelty_clearance": false
+  }
+}

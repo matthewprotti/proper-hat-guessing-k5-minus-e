@@ -1,0 +1,36 @@
+{
+  "format": "HGP-K8E-package-receipt-v1",
+  "date": "2026-09-04",
+  "claim_candidate": "HG_P(K8-e)=14",
+  "status": "COMPLETE_COMPUTER_ASSISTED_PROOF_CANDIDATE_PENDING_INDEPENDENT_REVIEW",
+  "certificate_sha256": {
+    "K8_e_q14_twin_rules.tsv": "6a9ee969be6f7ae217d6b103d03b117cb2b56142df9b5c2fab4c2084c8cc849d",
+    "K8_e_q14_clique_rules.tsv": "c899e85b4e52825509baf8e00572555f713e27f881be2800ad8a4371f4b37acb",
+    "K8_e_q14_residual_orbit_matching.tsv": "b739d1fecabfce888a7cd25f3ed0da1c329c0f29ffb772283ff99b8dd61a8982"
+  },
+  "counts": {
+    "pgl_group_order": 2184,
+    "normalized_clique_orbits": 990,
+    "normalized_proper_colouring_orbits": 63360,
+    "twin_covered_orbits": 14850,
+    "residual_orbits": 48510,
+    "attainable_clique_view_orbits": 53460,
+    "residual_orbit_edges": 291060,
+    "matching_size": 48510,
+    "full_proper_colourings": 138378240,
+    "coverage_failures": 0
+  },
+  "verification_lanes": [
+    "deterministic C++ certificate regeneration",
+    "independent Python data-only orbit and matching verification",
+    "independent C++ enumeration of all full proper colourings",
+    "three rejecting mutation controls"
+  ],
+  "nonclaims": [
+    "general K_n-e formula",
+    "peer review",
+    "Lean verification",
+    "necessity of the PGL orbit-matching mechanism",
+    "exhaustive novelty clearance"
+  ]
+}
