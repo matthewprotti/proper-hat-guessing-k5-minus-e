@@ -1,0 +1,9 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "g++": "g++ (Debian 14.2.0-19) 14.2.0",
+  "source_gate23_sha256": "9e5e9deddefe442e38456b4da1ae6a284f737e07b19f811ce00c7afc84b627ab",
+  "incoming_review_sha256": "6da9d6f635fb170a8d51f3895aa4a17d54de73b6b3362687cd5bfd1fcbdb8b10",
+  "current_agent_role": "reseal implementer and mathematical continuation, not a blinded independent reviewer"
+}
