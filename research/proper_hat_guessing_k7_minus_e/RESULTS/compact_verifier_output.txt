@@ -1,0 +1,12 @@
+claim=HG_P(K7-e)=12
+group_order=95040
+ordered_five_images=95040
+design_blocks_each=132
+design_intersection=0
+set_lines=495
+set_local_failures=0
+ordered_lines=59400
+ordered_local_failures=0
+proper_colourings=4656960
+residual_colourings=3421440
+verified=PASS
