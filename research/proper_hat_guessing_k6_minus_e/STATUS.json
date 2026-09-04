@@ -1,0 +1,31 @@
+{
+  "format": "hgp-k6e-public-disclosure-v1",
+  "version": "0.1",
+  "date": "2026-09-03",
+  "claim": "HG_P(K6-e)=10",
+  "mathematical_status": "PROVED_IN_RELEASE",
+  "review_status": "ADVERSARIAL_REVIEW_COMPLETED_CONVENTIONAL_PEER_REVIEW_PENDING",
+  "publication_status": "PUBLIC_GITHUB_RESEARCH_DISCLOSURE",
+  "finite_core": {
+    "group_order": 7920,
+    "ordered_four_images": 7920,
+    "repair_cases_per_main_label": 720,
+    "coordinate_lines": 2880,
+    "pointwise_equalities": 0,
+    "composition_fixed_points": 0,
+    "local_completion_failures": 0,
+    "proper_colorings_checked": 181440,
+    "maximum_residual_right_degree": 4
+  },
+  "structural_results": {
+    "twin_completion_criterion": true,
+    "even_n_set_symmetric_line_permutation_obstruction": true,
+    "complete_M11_repair_classification": true
+  },
+  "scope": {
+    "general_Kn_minus_e_solved": false,
+    "all_upper_endpoint_strategies_characterized": false,
+    "journal_peer_reviewed": false,
+    "exhaustive_novelty_clearance": false
+  }
+}
