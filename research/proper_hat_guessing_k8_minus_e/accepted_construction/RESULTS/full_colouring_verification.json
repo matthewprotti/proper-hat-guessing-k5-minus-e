@@ -1,0 +1,12 @@
+{
+  "format": "K8-e-q14-full-colouring-independent-C++-verification-v1",
+  "proper_colourings_checked": 138378240,
+  "coverage_failures": 0,
+  "correct_guess_histogram": {
+    "1": 126099792,
+    "2": 11594856,
+    "3": 672672,
+    "4": 10920
+  },
+  "verified": true
+}

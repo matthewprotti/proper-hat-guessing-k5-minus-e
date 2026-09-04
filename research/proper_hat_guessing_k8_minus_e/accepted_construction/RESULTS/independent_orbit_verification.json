@@ -1,0 +1,28 @@
+{
+  "claim_candidate": "HG_P(K8-e)=14",
+  "clique_view_rows": 53460,
+  "correct_guess_histogram": {
+    "1": 57738,
+    "2": 5309,
+    "3": 308,
+    "4": 5
+  },
+  "coverage_failures": 0,
+  "file_sha256": {
+    "K8_e_q14_clique_rules.tsv": "c899e85b4e52825509baf8e00572555f713e27f881be2800ad8a4371f4b37acb",
+    "K8_e_q14_residual_orbit_matching.tsv": "b739d1fecabfce888a7cd25f3ed0da1c329c0f29ffb772283ff99b8dd61a8982",
+    "K8_e_q14_twin_rules.tsv": "6a9ee969be6f7ae217d6b103d03b117cb2b56142df9b5c2fab4c2084c8cc849d"
+  },
+  "format": "K8-e-q14-independent-data-verification-v1",
+  "full_proper_colourings_represented": 138378240,
+  "group_normalization": {
+    "distinct_normalizers": 2184,
+    "ordered_distinct_triples": 2184
+  },
+  "matching_size": 48510,
+  "normalized_proper_colouring_orbits": 63360,
+  "residual_orbits": 48510,
+  "twin_covered_orbits": 14850,
+  "twin_rows": 990,
+  "verified": true
+}

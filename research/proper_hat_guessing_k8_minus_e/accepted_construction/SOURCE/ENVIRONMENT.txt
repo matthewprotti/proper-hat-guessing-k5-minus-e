@@ -1,0 +1,5 @@
+generated_utc=2026-09-04
+Python 3.13.5
+g++ (Debian 14.2.0-19) 14.2.0
+Linux localhost 6.18.35 #1 SMP Mon Aug 31 18:10:37 UTC 2026 x86_64 GNU/Linux
+dependencies=Python standard library; C++20 standard library
